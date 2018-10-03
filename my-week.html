@@ -4,105 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fave Things</title>
-    <style type="text/css">
-        body{
-          background-color: #F1EAF1;
-          margin: 0;
-        }
-
-        ul.menu {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          background-color: #D390C2;
-        }
-
-        li.menu {
-          float: left;
-          /*font-size: 20px;*/
-        }
-
-        li.menu a {
-          display: inline-block;
-          color: #FFFBFE;
-          text-align: center;
-          padding: 1vh 3vw;
-          text-decoration: none;
-          font-size: 22px;
-          font-family: "Roboto", Verdana, Tahoma;
-        }
-
-        li.home a {
-          display: inline-block;
-          color: white;
-          text-align: center;
-          padding: 1vh 3vw;
-          text-decoration: none;
-          font-size: 22px;
-          font-family: "Roboto", Verdana, Tahoma;
-        }
-
-        li.selected {
-          float: left;
-          font-size: 20px;
-          background-color: #BF789E;
-        }
-
-        li.selected a {
-          display: inline-block;
-          color: #FFFBFE;
-          text-align: center;
-          padding: 1vh 3vw;
-          text-decoration: none;
-          font-size: 22px;
-          font-family: "Roboto", Verdana, Tahoma;
-        }
-
-        li.home {
-          float: left;
-          font-size: 20px;
-          background-color: #816DE8;
-        }
-
-        li.home:hover {
-          background-color: #8C7AEA;
-        }
-
-        li.menu a:hover {
-          background-color: #D4ACCA;
-        }
-
-        @font-face {
-          font-family: "Roboto";
-          src: url(Roboto/Roboto-Regular.ttf) format("truetype");
-          font-family: "RobotoB";
-          src: url(Roboto/Roboto-Black.ttf) format("truetype"),
-          font-family: "RobotoL";
-          src: url(Roboto/Roboto-Light.ttf) format("truetype");
-        }
-
-        h1 {
-          margin: 60px;
-          font-size: 40px;
-          font-family: "Roboto", Verdana, Tahoma;
-        }
-        li.image {
-          margin: 20px;
-          display: inline-block;
-          color: black;
-          text-align: center;
-          padding: 1vh 0vw;
-          text-decoration: none;
-          font-size: 25px;
-          font-family: "RobotoL", Verdana, Tahoma;
-        }
-        img {
-          margin: 10px;
-          padding: 1vh 1vw;
-        }
-    </style>
+    <title>My Week</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
   <ul class="menu">
@@ -113,28 +16,53 @@
     <li class="menu"><a href="about-me.html">About Me </a></li>
     <li class="menu"><a href="how-to.html">How to </a></li>
   </ul>
-    <h1>Favorite Things</h1>
-    <ol type="1">
-        <li class="image">I like building brown bricks in Minecraft</li><br>
-          <img src="images/bricks1.png">
-          <img src="images/bricks2.png"><br><br><br><br><br>
-        <li class="image">Snow Halation</li><br>
-          <img src="images/snow.jpg">
-          <img src="images/snow2.jpg">
-          <img src="images/snow3.png"><br><br><br><br><br>
-        <li class="image">Inspector Gadget</li><br>
-        <img src="images/gadget1.png">
-        <img src="images/gadget2.png">
-        <img src="images/gadget3.png"><br><br><br><br><br>
-        <li class="image">Cats</li><br>
-          <img src="images/cat.jpg">
-          <img src="images/cat2.png">
-          <img src="images/cat3.jpg">
-          <img src="images/cat4.jpg"><br><br><br><br><br>
-        <li class="image">Penguins</li><br>
-          <img src="images/penguin.jpg">
-          <img src="images/penguin2.png">
-          <img src="images/penguin3.png">
-    </ol>
+    <h1>My Week</h1>
+    <table id="week" align="center">
+      <tr>
+        <th>Sunday</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+      </tr>
+      <tr>
+        <td>Try to wake up</td>
+        <td>Try to wake up</td>
+        <td>Try to wake up</td>
+        <td>Try to wake up</td>
+        <td>Try to wake up</td>
+        <td>Try to wake up</td>
+        <td>Try to wake up</td>
+      </tr>
+      <tr>
+        <td>Don't go to school</td>
+        <td>Go to school</td>
+        <td>Go to school</td>
+        <td>Go to school</td>
+        <td>Go to school</td>
+        <td>Go to school</td>
+        <td>Go to school</td>
+      </tr>
+      <tr>
+        <td>Do random stuff on the computer like Club Penguin or something</td>
+        <td>Do random stuff on the computer like fish or something</td>
+        <td>Do random stuff on the computer like Love Live or something</td>
+        <td>Do random stuff on the computer like Fortnite or something</td>
+        <td>Do random stuff on the computer like Inspector Gadget or something</td>
+        <td>Do random stuff on the computer like eggs or something</td>
+        <td>Do random stuff on the computer like Minecraft or something</td>
+      </tr>
+      <tr>
+        <td>Sleep</td>
+        <td>Sleep</td>
+        <td>Sleep</td>
+        <td>Sleep</td>
+        <td>Sleep</td>
+        <td>Sleep</td>
+        <td>Sleep</td>
+      </tr>
+    </table>
 </body>
 </html>
