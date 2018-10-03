@@ -1,5 +1,5 @@
-body{
-  background-color: #F1EAF1;
+body {
+  background-image: url("images/bee.png");
   margin: 0;
 }
 
@@ -42,6 +42,10 @@ li.selected {
   background-color: #BF789E;
 }
 
+p.marquee {
+  /*color: #00FFFF;*/
+}
+
 @font-face {
   font-family: "Roboto";
   src: url(Roboto/Roboto-Regular.ttf) format("truetype");
@@ -55,7 +59,17 @@ h1 {
   margin: 60px;
   font-size: 40px;
   font-family: "Roboto", Verdana, Tahoma;
+  background-color: cyan;
 }
+
+p {
+  background-color: yellow;
+}
+
+a.big {
+  font-size: 40px;
+}
+
 li.image {
   margin: 20px;
   display: inline-block;
@@ -69,6 +83,10 @@ li.image {
 img {
   margin: 10px;
   padding: 1vh 1vw;
+}
+
+div {
+  background-image: url(http://farm3.static.flickr.com/2464/3697567010_6ec9371123_o.gif);
 }
 
 table, th, td {
