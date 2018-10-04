@@ -60,13 +60,14 @@ h1 {
   font-size: 40px;
   font-family: "Roboto", Verdana, Tahoma;
   background-color: cyan;
+  text-align: center;
 }
 
 p {
   background-color: yellow;
 }
 
-a.big {
+a#big {
   font-size: 40px;
 }
 
