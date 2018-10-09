@@ -1,12 +1,12 @@
 body{
-  background-color: #F1EAF1;
-  margin: 0;
+  background-color: #F7F2F7;
+  margin: 0px;
 }
 
 ul.menu {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   overflow: hidden;
   background-color: #D390C2;
 }
@@ -42,20 +42,158 @@ li.selected {
   background-color: #BF789E;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+div.column1 {
+  float: left;
+  width: 60%;
+  padding: 0px;
+  line-height: 1.8;
+  word-wrap: break-word;
+}
+
+div.column2 {
+  float: left;
+  width: 40%;
+  padding: 0px;
+  line-height: 1.8;
+  word-wrap: break-word;
+}
+
+div.header {
+  clear: both;
+  margin-bottom: 30px;
+}
+
+/*@font-face {
+  font-family: "Roboto";
+  src: url(Roboto/Roboto-Regular.ttf) format("truetype");
+}*/
+
 @font-face {
   font-family: "Roboto";
   src: url(Roboto/Roboto-Regular.ttf) format("truetype");
+}
+
+@font-face {
   font-family: "RobotoB";
-  src: url(Roboto/Roboto-Black.ttf) format("truetype"),
+  src: url(Roboto/Roboto-Black.ttf) format("truetype");
+}
+
+@font-face {
   font-family: "RobotoL";
   src: url(Roboto/Roboto-Light.ttf) format("truetype");
 }
 
-h1 {
+h1.title {
   margin: 60px;
   font-size: 40px;
   font-family: "Roboto", Verdana, Tahoma;
 }
+
+h2.output {
+  margin: 0px;
+  font-size: 28px;
+  font-family: "Roboto", Verdana, Tahoma;
+  border-bottom: 2px solid black;
+}
+
+h2.title {
+  margin: 60px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 28px;
+  font-family: "Roboto", Verdana, Tahoma;
+  border-bottom: 2px solid black;
+}
+
+p.output {
+  margin: 0px;
+  font-size: 18px;
+  font-family: "RobotoL";
+}
+
+p.desc {
+  margin: 0px;
+  margin-left: 60px;
+  margin-right: 60px;
+  font-size: 18px;
+  font-family: "RobotoL";
+}
+
+p#cap {
+  margin: 0px;
+  font-size: 15px;
+  font-family: "RobotoL";
+  line-height: 1.6;
+}
+
+ul.desc {
+  margin: 0px;
+  margin-left: 60px;
+  font-size: 18px;
+  font-family: "RobotoL";
+  line-height: 1.8;
+}
+
+ul.output {
+  margin: 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-family: "RobotoL";
+  line-height: 1.8;
+}
+
+p.code {
+  margin-left: 60px;
+  margin-right: 60px;
+  font-family: monospace;
+  font-size: 15px;
+  background-color: #EDE2ED;
+  border: 0px;
+  display: block;
+  padding: 20px;
+  line-height: 1.8;
+}
+
+div.output {
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: monospace;
+  font-size: 15px;
+  background-color: #EDE2ED;
+  border: 0px;
+  display: block;
+  padding: 20px;
+  line-height: 1.8;
+}
+
+img {
+  margin: 10px;
+  padding: 1vh 1vw;
+}
+
+img.desc {
+  margin: 60px;
+}
+
+img.ex {
+  margin: 10px;
+  padding: 0px;
+  width: 34%;
+}
+
+img.output {
+  margin: 0px;
+  padding: 0px;
+  width: 15%;
+}
+
 li.image {
   margin: 20px;
   display: inline-block;
@@ -64,24 +202,27 @@ li.image {
   padding: 1vh 0vw;
   text-decoration: none;
   font-size: 25px;
-  font-family: "RobotoL", Verdana, Tahoma;
-}
-img {
-  margin: 10px;
-  padding: 1vh 1vw;
+  font-family: "RobotoL";
 }
 
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
+table#week {
+  border: 1px solid black;
+  border-collapse: collapse;
 }
-th, td {
+
+th.week, td.week {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th.week, td.week {
   padding: 10px;
 }
 
-td {
+td.week {
   width: 13vw;
 }
+
 table#week {
   margin-left: auto;
   margin-right: auto;
@@ -89,16 +230,28 @@ table#week {
 }
 
 table#week tr:nth-child(even) {
-    background-color: #FFF0FF;
+  background-color: #FFF0FF;
 }
 table#week tr:nth-child(odd) {
    background-color: #F0E4F0;
 }
 table#week th {
-    background-color: #926292;
-    color: white;
+  background-color: #926292;
+  color: white;
 }
 
-span.marquee  {
-  background: url(http://farm4.static.flickr.com/3618/3697567056_45ae16f677_o.gif);
+table.output {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 18px;
+  font-family: "RobotoL";
+}
+
+th.output, td.output {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th.output, td.output {
+  padding: 10px;
 }
