@@ -67,11 +67,6 @@ div.header {
   margin-bottom: 30px;
 }
 
-/*@font-face {
-  font-family: "Roboto";
-  src: url(Roboto/Roboto-Regular.ttf) format("truetype");
-}*/
-
 @font-face {
   font-family: "Roboto";
   src: url(Roboto/Roboto-Regular.ttf) format("truetype");
@@ -130,10 +125,17 @@ p#cap {
   line-height: 1.6;
 }
 
-ul.desc {
+ul.desc, ol.week {
   margin: 0px;
   margin-left: 60px;
   font-size: 18px;
+  font-family: "RobotoL";
+  line-height: 1.8;
+}
+
+ul.sub {
+  margin: 0px;
+  font-size: 16px;
   font-family: "RobotoL";
   line-height: 1.8;
 }
@@ -174,8 +176,8 @@ div.output {
 }
 
 img {
-  margin: 10px;
-  padding: 1vh 1vw;
+  margin-left: 60px;
+  /*height: 15vw;*/
 }
 
 img.desc {
@@ -194,20 +196,14 @@ img.output {
   width: 15%;
 }
 
-li.image {
-  margin: 20px;
-  display: inline-block;
-  color: black;
-  text-align: center;
-  padding: 1vh 0vw;
-  text-decoration: none;
-  font-size: 25px;
-  font-family: "RobotoL";
-}
-
-table#week {
+table.week {
   border: 1px solid black;
   border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  width: 92%;
+  font-family: "RobotoL";
+
 }
 
 th.week, td.week {
@@ -223,19 +219,13 @@ td.week {
   width: 13vw;
 }
 
-table#week {
-  margin-left: auto;
-  margin-right: auto;
-  width: 92%;
-}
-
-table#week tr:nth-child(even) {
+table.week tr:nth-child(even) {
   background-color: #FFF0FF;
 }
-table#week tr:nth-child(odd) {
+table.week tr:nth-child(odd) {
    background-color: #F0E4F0;
 }
-table#week th {
+table.week th {
   background-color: #926292;
   color: white;
 }
@@ -254,4 +244,10 @@ th.output, td.output {
 
 th.output, td.output {
   padding: 10px;
+}
+
+iframe.ex {
+  margin: 60px;
+  border: black solid 1px;
+  width: 100%;
 }
