@@ -27,6 +27,8 @@
       <p class="desc">Cats are pretty cool. Nya~</p><br>
       <img src="images/cat.jpg"><br><br>
     </div>
+    <hr class="separate">
+    <h2 class="sub">Heading</h2><br>
     <p class="desc">The heading is created using the tags <b class="code">&lt;h2&gt;</b> and <b class="code">&lt;/h2&gt;</b>. By inserting text inbetween the tags, content for the heading is created. In the above example, the heading would be written as:</p>
     <p class="code"><b>&lt;h2&gt;Cats&lt;h2&gt;</b></p>
     <p class="desc">Which results in</p>
@@ -34,114 +36,49 @@
       <h2>Cats</h2>
     </div>
     <p class="desc">While this does have the text as wanted, the style is still plain. So, CSS can be used to change it using the style attribute. What I personally did for this website was adjust the margins, font, and border.</p><br>
-    <p class="desc">To add the line, I used the <b class="code">border-bottom</b>. This creates a 2 pixel wide black line below the heading. Adding the line makes it more clear that the title represents the text below it. Then, the font had some adjustments to change its size and font type with <b class="code">font-size</b> and <b class="code">font-family</b>. This makes the font size 28, and the font changes to a custom TrueType file I had added. Changing the font will make the elements of the website more unique. Finally, I used <b class="code">margin</b> to add margins and separate the heading from the webpage sides. This makes the header not stick to the edge of the webpage anymore.</p>
-    <p class="code">h2 style="border-bottom: 2px solid black; font-size: 28px; font-family: "Roboto"; margin: 60px;"Catsh2</p>
+    <p class="desc">To add the line, I used the <b class="code">border-bottom</b>. This creates a 2 pixel wide black line below the heading. Adding the line makes it more clear that the title represents the text below it.</p>
+    <p class="code">&lt;h2 <b>style="border-bottom: 2px solid black;"</b>&gt;Cats&lt;/h2&gt;</p>
+    <p class="desc">Then, the font had some adjustments to change its size and font type with <b class="code">font-size</b> and <b class="code">font-family</b>. This makes the font size 28, and the font changes to a custom TrueType file I had added. Changing the font will make the elements of the website more unique.</p>
+    <p class="code">&lt;h2 style="border-bottom: 2px solid black; <b> font-size: 28px; font-family: "Roboto";</b>"&gt;Cats&lt;/h2&gt;</p>
+    <p class="desc">Finally, I used <b class="code">margin</b> to add margins and separate the heading from the webpage sides. This makes the header not stick to the edge of the webpage anymore.</p>
+    <p class="code">&lt;h2 style="border-bottom: 2px solid black; font-size: 28px; font-family: "Roboto"; <b>margin: 60px;</b>"&gt;Cats&lt;/h2&gt;</p>
     <p class="desc">The desired outcome is created.</p>
     <div class="output">
       <h2 class="output" style="border-bottom: 2px solid black; margin: 60px;">Cats</h2>
     </div>
-
-    <div class="heading">
-      <h2 class="title">My Week - Tables</h2>
-    </div>
+    <hr class="separate">
+    <h2 class="sub">Paragraph</h2><br>
+    <p class="desc">The paragraph is created using the tags <b class="code">&lt;p&gt;</b> and <b class="code">&lt;/p&gt;</b>. By inserting text inbetween the tags, content for the paragraph is created. In the above example, the paragraph would be written as:</p>
+    <p class="code"><b>&lt;p&gt;Cats are pretty cool. Nya~&lt;p&gt;</b></p>
+    <p class="desc">Which results in</p>
     <div class="output">
-      <table class="week" align="center">
-        <tr class="week">
-          <th class="week">Sunday</th>
-          <th class="week">Monday</th>
-          <th class="week">Tuesday</th>
-          <th class="week">Wednesday</th>
-          <th class="week">Thursday</th>
-          <th class="week">Friday</th>
-          <th class="week">Saturday</th>
-        </tr>
-        <tr class="week">
-          <td class="week">Try to wake up</td>
-          <td class="week">Try to wake up</td>
-          <td class="week">Try to wake up</td>
-          <td class="week">Try to wake up</td>
-          <td class="week">Try to wake up</td>
-          <td class="week">Try to wake up</td>
-          <td class="week">Try to wake up</td>
-        </tr>
-        <tr class="week">
-          <td class="week">Don't go to school</td>
-          <td class="week">Go to school</td>
-          <td class="week">Go to school</td>
-          <td class="week">Go to school</td>
-          <td class="week">Go to school</td>
-          <td class="week">Go to school</td>
-          <td class="week">Go to school</td>
-        </tr>
-        <tr class="week">
-          <td class="week">Do random stuff on the computer like Club Penguin or something</td>
-          <td class="week">Do random stuff on the computer like fish or something</td>
-          <td class="week">Do random stuff on the computer like Love Live or something</td>
-          <td class="week">Do random stuff on the computer like Fortnite or something</td>
-          <td class="week">Do random stuff on the computer like Inspector Gadget or something</td>
-          <td class="week">Do random stuff on the computer like eggs or something</td>
-          <td class="week">Do random stuff on the computer like Minecraft or something</td>
-        </tr>
-        <tr class="week">
-          <td class="week">Sleep</td>
-          <td class="week">Sleep</td>
-          <td class="week">Sleep</td>
-          <td class="week">Sleep</td>
-          <td class="week">Sleep</td>
-          <td class="week">Sleep</td>
-          <td class="week">Sleep</td>
-        </tr>
-      </table>
+      <p>Cats are pretty cool. Nya~<p>
     </div>
-    <div class="heading">
-      <h2 class="title">Important Things To Do - Lists</h2>
-    </div>
+    <p class="desc">While this does have the text as wanted, the style is still plain. So, CSS can be used to change it using the style attribute. What I personally did for this website was adjust the margins and font.</p><br>
+    <p class="desc">The font had some adjustments to change its size and font type with <b class="code">font-size</b> and <b class="code">font-family</b>. This makes the font size 18, and the font changes to a custom TrueType file I had added. Changing the font will make the elements of the website more unique.</p>
+    <p class="code">&lt;p <b>style="font-size: 18px; font-family: "Roboto";</b>"&gt;Cats are pretty cool. Nya~&lt;/p&gt;</p>
+    <p class="desc">Finally, I used <b class="code">margin</b> to add margins and separate the heading from the webpage sides. The attributes <b class="code">margin-top</b> and <b class="code">margin-bottom</b> were used to only have margins on the sides but not vertically. This makes the header not stick to the edge of the webpage anymore, while not creating a huge gap vertically.</p>
+    <p class="code">&lt;p style="font-size: 18px; font-family: "Roboto"; <b>margin: 60px; margin-top: 0px; margin-bottom: 0px;</b>"&gt;Cats are pretty cool. Nya~&lt;/p&gt;</p>
+    <p class="desc">The desired outcome is created.</p>
     <div class="output">
-      <ol class="week">
-        <li>Have a balanced breakfast</li>
-        <ul class="sub">
-          <li>Remember to brush your teeth before crossing the road.</li>
-        </ul>
-        <li>Drink plenty of water</li>
-        <ul class="sub">
-          <li>Warning: May cause diaphoresis, micturition, and tissue hydration.</li>
-        </ul>
-        <li>Default dance</li>
-        <ul class="sub">
-          <li>Costed me 2,000 V-Bucks.</li>
-        </ul>
-        <li>Do my weekly challenges</li>
-        <ul class="sub">
-          <li>Better get those battle stars.</li>
-        </ul>
-        <li>Collect my daily rewards</li>
-        <ul class="sub">
-          <li>100 coins.</li>
-        </ul>
-      </ol>
+      <p class="output" style="font-size: 18px; margin: 60px; margin-top: 0px; margin-bottom: 0px;">Cats are pretty cool. Nya~</p>
     </div>
-    <div class="heading">
-      <h2 class="title">Colorful World - Marquee And What Not To Do</h2>
-    </div>
+    <hr class="separate">
+    <h2 class="sub">Image</h2><br>
+    <p class="desc">The paragraph is created using the <b class="code">&lt;img&gt;</b> tag, with the <b class="code">src</b> attribute. On this website, the image's size is originally the desired size in the files.</p>
+    <p class="code"><b>&lt;p&gt;Cats are pretty cool. Nya~&lt;p&gt;</b></p>
+    <p class="desc">Which results in</p>
     <div class="output">
-      <p class="marquee">
-        <span class="marquee">
-          <marquee direction="right" scrollamount="10vw">LOOK AT ME GO</marquee>
-          <marquee direction="right" scrollamount="70vw">LOOK AT ME GO</marquee>
-          <marquee direction="right" scrollamount="60vw">LOOK AT ME GO</marquee>
-          <marquee direction="right" scrollamount="20vw">LOOK AT ME GO</marquee>
-          <marquee direction="right" scrollamount="100vw">LOOK AT ME GO</marquee>
-          <marquee direction="right" scrollamount="30vw">LOOK AT ME GO</marquee>
-          <marquee direction="right" scrollamount="300vw">IM SANS UNDERTALE</marquee>
-          <marquee direction="down" height="20px">WHEEEEEEEEEEEEEEEEEE</marquee>
-          <marquee direction="down" height="20px">WHEEEEEEEEEEEEEEEEEE</marquee>
-          <marquee direction="down" scrollamount="10vw" width="500" height="50" behavior="alternate" style="border:solid">
-            <marquee behavior="alternate">
-              boingboingboingboing
-            </marquee>
-          </marquee>
-        </span>
-      <p>
+      <p>Cats are pretty cool. Nya~<p>
+    </div>
+    <p class="desc">While this does have the text as wanted, the style is still plain. So, CSS can be used to change it using the style attribute. What I personally did for this website was adjust the margins and font.</p><br>
+    <p class="desc">The font had some adjustments to change its size and font type with <b class="code">font-size</b> and <b class="code">font-family</b>. This makes the font size 18, and the font changes to a custom TrueType file I had added. Changing the font will make the elements of the website more unique.</p>
+    <p class="code">&lt;p <b>style="font-size: 18px; font-family: "Roboto";</b>"&gt;Cats are pretty cool. Nya~&lt;/p&gt;</p>
+    <p class="desc">Finally, I used <b class="code">margin</b> to add margins and separate the heading from the webpage sides. The attributes <b class="code">margin-top</b> and <b class="code">margin-bottom</b> were used to only have margins on the sides but not vertically. This makes the header not stick to the edge of the webpage anymore, while not creating a huge gap vertically.</p>
+    <p class="code">&lt;p style="font-size: 18px; font-family: "Roboto"; <b>margin: 60px; margin-top: 0px; margin-bottom: 0px;</b>"&gt;Cats are pretty cool. Nya~&lt;/p&gt;</p>
+    <p class="desc">The desired outcome is created.</p>
+    <div class="output">
+      <p class="output" style="font-size: 18px; margin: 60px; margin-top: 0px; margin-bottom: 0px;">Cats are pretty cool. Nya~</p>
     </div>
 </body>
 </html>

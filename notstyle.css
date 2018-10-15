@@ -1,5 +1,5 @@
 body {
-  background-image: url("images/bee.png");
+  background-color: #F7F2F7;
   margin: 0;
 }
 
@@ -65,15 +65,16 @@ h1 {
   margin: 60px;
   font-size: 40px;
   font-family: "Roboto", Verdana, Tahoma;
-  background-color: cyan;
-  text-align: center;
+  /*background-color: cyan;*/
+  /*text-align: center;*/
 }
 
 p {
   background-color: yellow;
+  font-family: "Roboto";
 }
 
-a#big {
+p#big {
   font-size: 40px;
 }
 
