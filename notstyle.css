@@ -5,8 +5,8 @@ body {
 
 ul.menu {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   overflow: hidden;
   background-color: #D390C2;
 }
@@ -49,8 +49,14 @@ p.marquee {
 @font-face {
   font-family: "Roboto";
   src: url(Roboto/Roboto-Regular.ttf) format("truetype");
+}
+
+@font-face {
   font-family: "RobotoB";
-  src: url(Roboto/Roboto-Black.ttf) format("truetype"),
+  src: url(Roboto/Roboto-Black.ttf) format("truetype");
+}
+
+@font-face {
   font-family: "RobotoL";
   src: url(Roboto/Roboto-Light.ttf) format("truetype");
 }

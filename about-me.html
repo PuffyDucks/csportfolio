@@ -17,11 +17,11 @@
     <li class="menu"><a href="how-to.html">How to </a></li>
   </ul>
     <h1 class="title">About Me</h1>
-    <div class="header">
+    <div class="heading">
       <h2 class="title">Who am I?</h2>
     </div>
     <div class="column1">
-      <p class="desc">Hello, and again, welcome to my webpage. I'm Louis, an amateur programmer. My interest in computers and programming was sparked by video games. Computers had always fascinated me and to this day they still do. When I was young, I always pondered over how clicking all the buttons in Club Penguin worked how the login system had functioned. A few years later, I got into building command block and redstone creations in Minecraft. I've even hosted a couple of servers. After having a stronger grasp on programming, I've decompiled and/or modded different games such as Undertale. I also enjoy logic puzzles and other similar games. Today, I know languages such as JavaScript and HTML, and I am still learning.</p><br><br>
+      <p class="desc">Hello, and again, welcome to my webpage. I'm Louis, an amateur programmer. My interest in computers and programming was sparked by video games. Computers had always fascinated me and to this day they still do. When I was young, I always pondered over how clicking all the buttons in Club Penguin worked how the login system had functioned. A few years later, I got into building command block and redstone creations in Minecraft. I've even hosted a couple of servers. After having a stronger grasp on programming, I've decompiled and/or modded different games such as Undertale. I also enjoy logic puzzles and other similar games. Today, I know languages such as JavaScript and HTML, and I am still learning. This webpage was designed for me to practice many different skills in the area of HTML and CSS. The following is about the creation of this website and the elements used.</p><br><br>
     </div>
     <div class="column2">
       <img class="ex" src="images/ex1.png">
@@ -30,54 +30,68 @@
       <img class="ex" src="images/ex4.png">
       <p id="cap">Most of my experience with computers was through video games.</p><br><br>
     </div>
-    <div class="header">
+    <div class="heading">
       <h2 class="title">Creating This Website</h2>
     </div>
-    <p class="desc">This website runs off of the markup language HTML, along with some CSS to style the elements. </p><br><br>
+    <p class="desc">This website runs off of the markup language HTML.</p><br><br>
     <p class="desc">There are many different types of HTML elements, such as:</p><br>
     <ul class="desc">
-      <li>Headers</li>
+      <li>Headings</li>
       <li>Paragraphs</li>
       <li>Images</li>
       <li>Tables</li>
       <li>Lists</li>
       <li>Marquee</li>
     </ul><br><br>
-    <table class="week">
-      <tr class="week">
-        <th class="week">Headers</th>
-        <th class="week">Paragraphs</th>
-        <th class="week">Images</th>
-        <th class="week">Tables</th>
-        <th class="week">Lists</th>
-        <th class="week">Marquee</th>
-      </tr>
-      <tr class="week">
-        <td class="week">Headers</td>
-        <td class="week">Paragraphs</td>
-        <td class="week">Images</td>
-        <td class="week">Tables</td>
-        <td class="week">Lists</td>
-        <td class="week">Marquee</td>
-      </tr>
-      <tr class="week">
-        <td class="week">Headers</td>
-        <td class="week">Paragraphs</td>
-        <td class="week">Images</td>
-        <td class="week">Tables</td>
-        <td class="week">Lists</td>
-        <td class="week">Marquee</td>
-      </tr>
-      <tr class="week">
-        <td class="week">Headers</td>
-        <td class="week">Paragraphs</td>
-        <td class="week">Images</td>
-        <td class="week">Tables</td>
-        <td class="week">Lists</td>
-        <td class="week">Marquee</td>
-      </tr>
-    </table><br><br>
-    <p class="desc">CSS is also used with many properties changed, including:</p><br>
+    <div class="heading">
+      <h2 class="title">Heading</h2>
+    </div>
+    <p class="desc">A heading is text used to show important information such as section titles. </p>
+    <p class="desc">A heading is created by placing text inbetween a <b class="code">&lt;h1&gt;</b> and <b class="code">&lt;/h1&gt;</b> tag. The number in the tag can range from anywhere from <b class="code">&lt;h1&gt;</b> to <b class="code">&lt;h6&gt;</b>.</p>
+    <p class="code">&lt;h2&gt;This is a Heading&lt;/h2&gt;</p>
+    <div class="output"><h2 class="output">This is a Heading</h2></div>
+
+    <div class="heading">
+      <h2 class="title">Paragraph</h2>
+    </div>
+    <p class="desc">A paragraph text, usually for blocks of text to read. </p>
+    <p class="desc">A paragraph is created by placing text inbetween a <b class="code">&lt;p&gt;</b> and <b class="code">&lt;/p&gt;</b> tag.</p>
+    <p class="code">&lt;p&gt;This is a paragraph.&lt;/p&gt;</p>
+    <div class="output"><p class="output">This is a paragraph.</p></div>
+
+    <div class="heading">
+      <h2 class="title">Image</h2>
+    </div>
+    <p class="desc">An image can be embedded to show a picture.</p>
+    <p class="desc">An image is created using an <b class="code">&lt;img&gt;</b> tag with a <b class="code">src</b> attribute for the image source. </p>
+    <p class="code">&lt;img src="image.png"&gt;</p>
+    <div class="output"><img class="output" src="images/image.png"><br></div>
+
+    <div class="heading">
+      <h2 class="title">Table</h2>
+    </div>
+    <p class="desc">A table in a webpage shows data using rows and colunms. </p>
+    <p class="desc">A table is created using a <b class="code">&lt;table&gt;</b> and <b class="code">&lt;/table&gt;</b> tag. In it, each table row is created with a <b class="code">&lt;tr&gt;</b> and <b class="code">&lt;/tr&gt;</b> tag. Finally, indivisual table data boxes are created by placing content inbetween a <b class="code">&lt;td&gt;</b> and <b class="code">&lt;/td&gt;</b> tag.
+    <p class="code">&lt;table&gt;<br>&nbsp;&nbsp;&lt;tr&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;This&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Is&lt;/td&gt;<br>&nbsp;&nbsp;&lt;/tr&gt;<br>&nbsp;&nbsp;&lt;tr&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;A&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Table&lt;/td&gt;<br>&nbsp;&nbsp;&lt;/tr&gt;<br>&lt;/table&gt;</p>
+    <div class="output"><table class="output"><tr class="output"><td class="output">This</td><td class="output">Is</td></tr><tr class="output"><td class="output">A</td><td class="output">Table</td></tr></table></div>
+
+    <div class="heading">
+      <h2 class="title">List</h2>
+    </div>
+    <p class="desc">A list shows different lines of text, typically using bullet points.</p>
+    <p class="desc">A list is created with a <b class="code">&lt;ul&gt;</b> and <b class="code">&lt;/ul&gt;</b> tag, or a <b class="code">&lt;ol&gt;</b> and <b class="code">&lt;/ol&gt;</b> tag for an ordered list. Each bullet point is created by placing content inbetween a <b class="code">&lt;li&gt;</b> and <b class="code">&lt;/li&gt;</b> tag inside the list. An indent can be created by nesting another list in a bullet point. </p>
+    <p class="code">&lt;ul&gt;<br>&nbsp;&nbsp;&lt;li&gt;This&lt;/li&gt;<br>&nbsp;&nbsp;&lt;li&gt;Is&lt;/li&gt;<br>&nbsp;&nbsp;&lt;li&gt;A&lt;/li&gt;<br>&nbsp;&nbsp;&lt;li&gt;List<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;This&lt;/ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;Is&lt;/ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;A&lt;/ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;Nested&lt;/ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;List&lt;/ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>&nbsp;&nbsp;&lt;/li&gt;<br>&lt;/ul&gt;</p>
+    <div class="output"><ul class="output"><li>This</li><li>Is</li><li>A</li><li>List<ul><li>This</li><li>Is</li><li>A</li><li>Nested</li><li>List</li></ul></li></ul></div>
+
+    <div class="heading">
+      <h2 class="title">Marquee</h2>
+    </div>
+    <p class="desc">Marquee is used to create scrolling text.</p>
+    <p class="desc">Marquee is created by placing text inbetween a <b class="code">&lt;marquee&gt;</b> and <b class="code">&lt;/marquee&gt;</b> tag. </p>
+    <p class="code">&lt;marquee&gt;This is marquee&lt;/marquee&gt;</p>
+    <div class="output"><marquee>This is marquee</marquee></div>
+
+    <!-- <p class="desc">CSS is also used with many properties changed, including:</p><br>
     <ul class="desc">
       <li>Margins</li>
       <li>Padding</li>
@@ -86,7 +100,7 @@
       <li>Font Size</li>
       <li>Font Family</li>
       <li>Line Height</li>
-      <li>Width</li>
+      <li>Width</li> -->
     </ul><br><br>
 </body>
 </html>

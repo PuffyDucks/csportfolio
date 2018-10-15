@@ -17,42 +17,34 @@
     <li class="selected"><a href="how-to.html">How to </a></li>
   </ul>
     <h1 class="title">How To</h1>
-    <p class="desc">The following box shows a compilation of most visible elements used on my website. </p>
-    <div class="output">
-      <div class="header">
-        <h2 class="output">This is a Header</h2>
-      </div>
-      <p class="output">This is a paragraph.</p><br>
-      <img class="output" src="images/image.png"><br><br>
-      <table class="output">
-        <tr class="output">
-          <td class="output">This</td>
-          <td class="output">Is</td>
-        </tr>
-        <tr class="output">
-          <td class="output">A</td>
-          <td class="output">Table</td>
-        </tr>
-      </table><br>
-      <ul class="output">
-        <li>This</li>
-        <li>Is</li>
-        <li>A</li>
-        <li>List</li>
-      </ul>
-    </div><br><br>
-    <p class="desc">The was created using the following HTML, excluding CSS(which will be covered later). </p>
-    <p class="code">&lt;h2&gt;This is a Header&lt;/h2&gt;<br>&lt;p&gt;This is a paragraph.&lt;/p&gt;&lt;br&gt;<br>&lt;img src="images/image.png"&gt;<br>&lt;ul&gt;<br>&nbsp&lt;li&gt;This&lt;/li&gt;<br>&nbsp&lt;li&gt;Is&lt;/li&gt;<br>&nbsp&lt;li&gt;A&lt;/li&gt;<br>&nbsp&lt;li&gt;List&lt;/li&gt;<br>&lt;/ul&gt;<br>&lt;table&gt;<br>&nbsp&lt;tr&gt;<br>&nbsp&nbsp&lt;td&gt;This&lt;/td&gt;<br>&nbsp&nbsp&lt;td&gt;Is&lt;/td&gt;<br>&nbsp&lt;/tr&gt;<br>&nbsp&lt;tr&gt;<br>&nbsp&nbsp&lt;td&gt;A&lt;/td&gt;<br>&nbsp&nbsp&lt;td&gt;Table&lt;/td&gt;<br>&nbsp&lt;/tr&gt;<br>&lt;/table&gt;</p><br>
-    <p class="desc">To break it down, I will show small exerpts of the code of other pages to show how differnt elements were used.</p>
+    <p class="desc">The pages Favorite Things, My Week, and Colorful World all used different HTML elements to be written. This website has all of its CSS stored and linked on an external stylesheet, but the examples on this page will use the style attribute to use CSS on the same line as the element.</p><br>
+    <div class="heading">
+      <h2 class="title">Favorite Things - Headings, Paragraphs, and Images</h2>
+    </div>
+    <p class="desc">In the Favorite Things page, a section for a topic was defined using a heading, to visually separate different groups of images from each other. Then, below that, was a paragraph, which in this situation was used to create a caption for the images. Then, finally, the images themselves were placed as the main content of the page. </p><br>
     <div class="output">
       <h2 class="title">Cats</h2><br>
       <p class="desc">Cats are pretty cool. Nya~</p><br>
-      <img src="images/cat.jpg">
-      <img src="images/cat2.png">
-      <img src="images/cat4.jpg"><br><br>
+      <img src="images/cat.jpg"><br><br>
+    </div>
+    <p class="desc">The heading is created using the tags <b class="code">&lt;h2&gt;</b> and <b class="code">&lt;/h2&gt;</b>. By inserting text inbetween the tags, content for the heading is created. In the above example, the heading would be written as:</p>
+    <p class="code"><b>&lt;h2&gt;Cats&lt;h2&gt;</b></p>
+    <p class="desc">Which results in</p>
+    <div class="output">
+      <h2>Cats</h2>
+    </div>
+    <p class="desc">While this does have the text as wanted, the style is still plain. So, CSS can be used to change it using the style attribute. What I personally did for this website was adjust the margins, font, and border.</p><br>
+    <p class="desc">To add the line, I used the <b class="code">border-bottom</b>. This creates a 2 pixel wide black line below the heading. Adding the line makes it more clear that the title represents the text below it. Then, the font had some adjustments to change its size and font type with <b class="code">font-size</b> and <b class="code">font-family</b>. This makes the font size 28, and the font changes to a custom TrueType file I had added. Changing the font will make the elements of the website more unique. Finally, I used <b class="code">margin</b> to add margins and separate the heading from the webpage sides. This makes the header not stick to the edge of the webpage anymore.</p>
+    <p class="code">h2 style="border-bottom: 2px solid black; font-size: 28px; font-family: "Roboto"; margin: 60px;"Catsh2</p>
+    <p class="desc">The desired outcome is created.</p>
+    <div class="output">
+      <h2 class="output" style="border-bottom: 2px solid black; margin: 60px;">Cats</h2>
+    </div>
+
+    <div class="heading">
+      <h2 class="title">My Week - Tables</h2>
     </div>
     <div class="output">
-      <h2 class="title">My Week</h2><br>
       <table class="week" align="center">
         <tr class="week">
           <th class="week">Sunday</th>
@@ -101,8 +93,10 @@
         </tr>
       </table>
     </div>
+    <div class="heading">
+      <h2 class="title">Important Things To Do - Lists</h2>
+    </div>
     <div class="output">
-      <h2 class="title">Important Things To Do</h2><br>
       <ol class="week">
         <li>Have a balanced breakfast</li>
         <ul class="sub">
@@ -126,6 +120,9 @@
         </ul>
       </ol>
     </div>
+    <div class="heading">
+      <h2 class="title">Colorful World - Marquee And What Not To Do</h2>
+    </div>
     <div class="output">
       <p class="marquee">
         <span class="marquee">
@@ -135,6 +132,7 @@
           <marquee direction="right" scrollamount="20vw">LOOK AT ME GO</marquee>
           <marquee direction="right" scrollamount="100vw">LOOK AT ME GO</marquee>
           <marquee direction="right" scrollamount="30vw">LOOK AT ME GO</marquee>
+          <marquee direction="right" scrollamount="300vw">IM SANS UNDERTALE</marquee>
           <marquee direction="down" height="20px">WHEEEEEEEEEEEEEEEEEE</marquee>
           <marquee direction="down" height="20px">WHEEEEEEEEEEEEEEEEEE</marquee>
           <marquee direction="down" scrollamount="10vw" width="500" height="50" behavior="alternate" style="border:solid">
@@ -145,7 +143,5 @@
         </span>
       <p>
     </div>
-    <p class="desc">The text on this website styled with CSS, which was linked on an external stylesheet using </p>
-    <p class="code">&lt;link rel="stylesheet" href="style.css" type="text/css"&gt;</p>
 </body>
 </html>
