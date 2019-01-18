@@ -1,5 +1,5 @@
 /* global draw ellipse rect p processing width height size */
-var sketch = function(processing) {with(processing) {size(window.innerWidth, window.innerHeight * 0.945);background(247, 242, 247);
+var sketch = function(processing) {with(processing) {size(window.innerWidth - 160, window.innerHeight * 0.945 / 2);background(247, 242, 247);
 // °º¤ø,¸¸,ø¤º°`°º¤ø Create Project Below This Line ø¤º°`°º¤ø,¸,ø¤°//
 
 // Variables for distance and angle calculations
@@ -11,8 +11,8 @@ var tempAngle;
 var angle;
 
 // Variables for circle position and movement
-var circleX = window.innerWidth / 2;
-var circleY = window.innerHeight * 0.945 / 2;
+var circleX = width / 2;
+var circleY = height / 2;
 var edgeMovementX;
 var edgeMovementY;
 
@@ -52,7 +52,7 @@ function edgeCheck() {
     // Sides of box
     if (circleX < 50) {
         edgeMovementX = 3;
-    } else if (circleX > window.innerWidth - 50) {
+    } else if (circleX > window.innerWidth - 200) {
         edgeMovementX = -3;
     } else {
         edgeMovementX = 0;
@@ -61,7 +61,7 @@ function edgeCheck() {
     // Top and bottom of box
     if (circleY < 50) {
         edgeMovementY = 3;
-    } else if (circleY > window.innerHeight * 0.945 - 50) {
+    } else if (circleY > window.innerHeight * 0.945 / 2 - 50) {
         edgeMovementY = -3;
     } else {
         edgeMovementY = 0;

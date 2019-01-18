@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>How To</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>HTML/CSS How To</title>
+    <link rel="stylesheet" href="../style/style.css" type="text/css">
 </head>
 <body>
   <ul class="menu">
@@ -16,15 +16,15 @@
     <li class="menu"><a href="colorful-world.html">Colorful World </a></li>
     <li class="selected"><a href="how-to.html">How to </a></li>
   </ul>
-    <h1 class="title">How To</h1>
-    <p class="desc">The pages Favorite Things, My Week, and Colorful World all used different HTML elements to be written. This website has all of its CSS stored and linked on an external stylesheet, but the examples on this page will use the style attribute to use CSS on the same line as the element.</p><br>
+    <h1 class="title">HTML/CSS How To</h1>
+    <p class="desc">The pages Favorite Things, My Week, and Colorful World all utilized different HTML elements to be written. This website has all of its CSS stored and linked on an external stylesheet, but the examples on this page will use the style attribute to use CSS on the same line as the element.</p><br>
     <div class="heading">
       <h2 class="title">Favorite Things - Headings, Paragraphs, and Images</h2>
     </div>
     <p class="desc">In the Favorite Things page, a section for a topic was defined using a heading, to visually separate different groups of images from each other. Then, below that, was a paragraph, which in this situation was used to create a caption for the images. Then, finally, the images themselves were placed as the main content of the page. </p><br>
     <div class="output">
       <h2 class="title">Cats</h2><br>
-      <p class="desc">Cats are pretty cool. Nya~</p><br>
+      <p class="desc">Cats are pretty cool. Meow!</p><br>
       <img src="images/cat.jpg"><br><br>
     </div>
     <hr class="separate">
@@ -49,19 +49,19 @@
     <hr class="separate">
     <h2 class="sub">Paragraph</h2><br>
     <p class="desc">The paragraph is created using the tags <b class="code">&lt;p&gt;</b> and <b class="code">&lt;/p&gt;</b>. By inserting text inbetween the tags, content for the paragraph is created. In the above example, the paragraph would be written as:</p>
-    <p class="code"><b>&lt;p&gt;Cats are pretty cool. Nya~&lt;p&gt;</b></p>
+    <p class="code"><b>&lt;p&gt;Cats are pretty cool. Meow!&lt;p&gt;</b></p>
     <p class="desc">Which results in</p>
     <div class="output">
-      <p>Cats are pretty cool. Nya~<p>
+      <p>Cats are pretty cool. Meow!<p>
     </div>
     <p class="desc">While this does have the text as wanted, the style is still plain. So, CSS can be used to change it using the style attribute. What I personally did for this website was adjust the margins and font.</p><br>
     <p class="desc">The font had some adjustments to change its size and font type with <b class="code">font-size</b> and <b class="code">font-family</b>. This makes the font size 18, and the font changes to a custom TrueType file I had added. Changing the font will make the elements of the website more unique.</p>
-    <p class="code">&lt;p <b>style="font-size: 18px; font-family: "Roboto";</b>"&gt;Cats are pretty cool. Nya~&lt;/p&gt;</p>
+    <p class="code">&lt;p <b>style="font-size: 18px; font-family: "Roboto";</b>"&gt;Cats are pretty cool. Meow!&lt;/p&gt;</p>
     <p class="desc">Finally, I used <b class="code">margin</b> to add margins and separate the heading from the webpage sides. The attributes <b class="code">margin-top</b> and <b class="code">margin-bottom</b> were used to only have margins on the sides but not vertically. This makes the header not stick to the edge of the webpage anymore, while not creating a huge gap vertically.</p>
-    <p class="code">&lt;p style="font-size: 18px; font-family: "Roboto"; <b>margin: 60px; margin-top: 0px; margin-bottom: 0px;</b>"&gt;Cats are pretty cool. Nya~&lt;/p&gt;</p>
+    <p class="code">&lt;p style="font-size: 18px; font-family: "Roboto"; <b>margin: 60px; margin-top: 0px; margin-bottom: 0px;</b>"&gt;Cats are pretty cool. Meow!&lt;/p&gt;</p>
     <p class="desc">The desired outcome is created.</p>
     <div class="output">
-      <p class="output" style="font-size: 18px; margin: 60px; margin-top: 0px; margin-bottom: 0px;">Cats are pretty cool. Nya~</p>
+      <p class="output" style="font-size: 18px; margin: 60px; margin-top: 0px; margin-bottom: 0px;">Cats are pretty cool. Meow!</p>
     </div>
     <hr class="separate">
     <h2 class="sub">Image</h2><br>
@@ -71,108 +71,6 @@
     <div class="output">
       <img src="images/cat.jpg">
     </div>
-    <p class = desc> lol i never bothered to finish the rest of this page </p>
-    <div class="heading">
-      <h2 class="title">My Week - Tables</h2>
-    </div>
-    <div class="output">
-      <table class="week" align="center">
-        <tr class="week">
-          <th class="week">Sunday</th>
-          <th class="week">Monday</th>
-          <th class="week">Tuesday</th>
-          <th class="week">Wednesday</th>
-          <th class="week">Thursday</th>
-          <th class="week">Friday</th>
-          <th class="week">Saturday</th>
-        </tr>
-        <tr class="week">
-          <td class="week">Try to wake up</td>
-          <td class="week">Try to wake up</td>
-          <td class="week">Try to wake up</td>
-          <td class="week">Try to wake up</td>
-          <td class="week">Try to wake up</td>
-          <td class="week">Try to wake up</td>
-          <td class="week">Try to wake up</td>
-        </tr>
-        <tr class="week">
-          <td class="week">Don't go to school</td>
-          <td class="week">Go to school</td>
-          <td class="week">Go to school</td>
-          <td class="week">Go to school</td>
-          <td class="week">Go to school</td>
-          <td class="week">Go to school</td>
-          <td class="week">Go to school</td>
-        </tr>
-        <tr class="week">
-          <td class="week">Do random stuff on the computer like Club Penguin or something</td>
-          <td class="week">Do random stuff on the computer like fish or something</td>
-          <td class="week">Do random stuff on the computer like Love Live or something</td>
-          <td class="week">Do random stuff on the computer like Fortnite or something</td>
-          <td class="week">Do random stuff on the computer like Inspector Gadget or something</td>
-          <td class="week">Do random stuff on the computer like eggs or something</td>
-          <td class="week">Do random stuff on the computer like Minecraft or something</td>
-        </tr>
-        <tr class="week">
-          <td class="week">Sleep</td>
-          <td class="week">Sleep</td>
-          <td class="week">Sleep</td>
-          <td class="week">Sleep</td>
-          <td class="week">Sleep</td>
-          <td class="week">Sleep</td>
-          <td class="week">Sleep</td>
-        </tr>
-      </table>
-    </div>
-    <div class="heading">
-      <h2 class="title">Important Things To Do - Lists</h2>
-    </div>
-    <div class="output">
-      <ol class="week">
-        <li>Have a balanced breakfast</li>
-        <ul class="sub">
-          <li>Remember to brush your teeth before crossing the road.</li>
-        </ul>
-        <li>Drink plenty of water</li>
-        <ul class="sub">
-          <li>Warning: May cause diaphoresis, micturition, and tissue hydration.</li>
-        </ul>
-        <li>Default dance</li>
-        <ul class="sub">
-          <li>Costed me 2,000 V-Bucks.</li>
-        </ul>
-        <li>Do my weekly challenges</li>
-        <ul class="sub">
-          <li>Better get those battle stars.</li>
-        </ul>
-        <li>Collect my daily rewards</li>
-        <ul class="sub">
-          <li>100 coins.</li>
-        </ul>
-      </ol>
-    </div>
-    <div class="heading">
-      <h2 class="title">Colorful World - Marquee And What Not To Do</h2>
-    </div>
-    <div class="output">
-      <p class="marquee">
-        <span class="marquee">
-          <marquee direction="right" scrollamount="10vw">LOOK AT ME GO</marquee>
-          <marquee direction="right" scrollamount="70vw">LOOK AT ME GO</marquee>
-          <marquee direction="right" scrollamount="60vw">LOOK AT ME GO</marquee>
-          <marquee direction="right" scrollamount="20vw">LOOK AT ME GO</marquee>
-          <marquee direction="right" scrollamount="100vw">LOOK AT ME GO</marquee>
-          <marquee direction="right" scrollamount="30vw">LOOK AT ME GO</marquee>
-          <marquee direction="right" scrollamount="300vw">IM SANS UNDERTALE</marquee>
-          <marquee direction="down" height="20px">WHEEEEEEEEEEEEEEEEEE</marquee>
-          <marquee direction="down" height="20px">WHEEEEEEEEEEEEEEEEEE</marquee>
-          <marquee direction="down" scrollamount="10vw" width="500" height="50" behavior="alternate" style="border:solid">
-            <marquee behavior="alternate">
-              boingboingboingboing
-            </marquee>
-          </marquee>
-        </span>
-      <p>
-    </div>
+    <hr class="separate">
 </body>
 </html>

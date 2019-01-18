@@ -11,13 +11,13 @@ ul.menu {
   background-color: #D390C2;
 }
 
-li.menu a, li.home a, li.selected a{
+li.menu a, li.home a, li.selected a, li.art-button, li.javascript-website-button, li.ai-button{
   float: left;
   display: inline-block;
   text-align: center;
-  padding: 1vh 3vw;
+  padding: 1vh 2.5vw;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 20px;
   font-family: "Roboto";
   color:  #FFFFFF;
 }
@@ -270,4 +270,8 @@ th.output, td.output {
 hr.separate {
   margin: 60px;
   border: #786778 solid 1px;
+}
+
+canvas.example-canvas {
+  margin: 60px;
 }
