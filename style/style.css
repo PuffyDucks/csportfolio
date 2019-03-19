@@ -275,3 +275,80 @@ hr.separate {
 canvas.example-canvas {
   margin: 60px;
 }
+
+#newColorDropdown, #newColorInput, #inputType {
+  margin: 60px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-right: 0px;
+}
+
+button#changeColorButton {
+  margin: 60px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  background: #C7D0F9;
+  border: none;
+  font-family: "Roboto";
+  font-size: 13px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+button#changeColorButton:hover {
+  background: #B6BFEA;
+}
+
+button.changeInputButton {
+  margin-left: 20px;
+  margin-bottom: 60px;
+  background: #EAB6EA;
+  border: none;
+  font-family: "Roboto";
+  font-size: 18px;
+  cursor: pointer;
+  padding: 12px 24px;
+}
+
+button.changeInputButton:hover {
+  background: #D6ABD6;
+}
+
+button#inputButton {
+  margin-left: 60px;
+}
+
+input.slider {
+  -webkit-appearance: none;
+  height: 5px;
+  background: #000000;
+  outline: none;
+  /* opacity: 0.7; */
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  margin-left: 60px;
+  margin-bottom: 20px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#r::-webkit-slider-thumb {
+  background: #DD0000;
+  /* border: 2px solid #DD0000; /* Green */ */
+}
+
+#g::-webkit-slider-thumb {
+  background: #00DD00;
+}
+
+#b::-webkit-slider-thumb {
+  background: #0000DD;
+}

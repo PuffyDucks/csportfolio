@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Color</title>
+    <link rel="stylesheet" href="../style/style.css" type="text/css">
+</head>
+<body>
+  <ul class="menu">
+    <li class="home"><a style="" href="../index.html">PuffyDucks </a></li>
+    <li class="selected"><a onclick="color.html">Color </a></li>
+    <li class="menu"><a href="info.html">Info </a></li>
+    <li class="menu"><a href="button.html">Button </a></li>
+    <li class="menu"><a href="calculator.html">Calculator </a></li>
+    <li class="menu"><a href="LOL.html">LOL </a></li>
+    </ul>
+    <h1 class="title">Color</h1>
+    <button class="changeInputButton" id="inputButton" onclick="makeInput();">Textbox</button>
+    <button class="changeInputButton" onclick="makeDropdown();">Dropdown</button>
+    <button class="changeInputButton" onclick="makeSlider();">Sliders</button>
+    <div id="inputs">
+      <input id="newColorInput" onkeypress="enter(event)" autocomplete="off">
+      <br>
+      <button id="changeColorButton">Change Color</button>
+      <p class="desc" style="font-size: 14px;"><a href="https://www.w3schools.com/colors/colors_names.asp">List of colors</a></p>
+    </div>
+    <div id="dropdown" style="display:none">
+      <select id="newColorDropdown" oninput="changeColor();">
+        <option value="#F7F2F7">Default</option>
+        <option value="magenta">Magenta</option>
+        <option value="pink">Pink</option>
+        <option value="red">Red</option>
+        <option value="orange">Orange</option>
+        <option value="yellow">Yellow</option>
+        <option value="lawngreen">LawnGreen</option>
+        <option value="green">Green</option>
+        <option value="aqua">Aqua</option>
+        <option value="DeepSkyBlue">DeepSkyBlue</option>
+        <option value="blue">Blue</option>
+        <option value="blueviolet">BlueViolet</option>
+        <option value="purple">Purple</option>
+        <option value="lavender">Lavender</option>
+      </select>
+    </div>
+    <div id="sliders" style="display:none">
+      <input type="range" id="r" class="slider" oninput="changeColor();" min="0" max="255" value="247"><br>
+      <input type="range" id="g" class="slider" oninput="changeColor();" min="0" max="255" value="242"><br>
+      <input type="range" id="b" class="slider" oninput="changeColor();" min="0" max="255" value="247">
+    </div>
+    <script src="color.js"></script>
+</body>
+</html>
