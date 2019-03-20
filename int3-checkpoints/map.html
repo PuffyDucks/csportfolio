@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Map</title>
+    <link rel="stylesheet" href="../style/style.css" type="text/css">
+</head>
+<body>
+  <ul class="menu">
+    <li class="home"><a style="" href="../index.html">PuffyDucks </a></li>
+    <li class="menu"><a href="color.html">Color </a></li>
+    <li class="selected"><a href="map.html">Map </a></li>
+    <li class="menu"><a href="button.html">Button </a></li>
+    <li class="menu"><a href="calculator.html">Calculator </a></li>
+    <li class="menu"><a href="LOL.html">LOL </a></li>
+    </ul>
+    <h1 class="title">Map</h1>
+    <div id="map" style="display:none">
+      <img class="noDrag" src="images/map.jpg" alt="Club Penguin Map" usemap="#islandmap" width="701" height="473" style="float: left;">
+      <h2 id="infoTitle" class="sub"></h2>
+      <p id="infoDesc" class="desc"></p>
+    </div>
+    <map name="islandmap">
+      <area id="Close" alt="Close" title="Close" coords="649,23,17" shape="circle">
+      <area id="Ski Hill" alt="Ski Hill" title="Ski Hill" coords="278,85,266,66,241,63,216,44,164,45,102,111,111,122,145,115" shape="poly">
+      <area id="Ski Village" alt="Ski Village" title="Ski Village" coords="167,109,175,130,226,167,278,143,246,89" shape="poly">
+      <area id="Dojo" alt="Dojo" title="Dojo" coords="416,59,422,33,380,11,360,19,348,44" shape="poly">
+      <area id="Iceberg" alt="Iceberg" title="Iceberg" coords="552,99,606,124,641,120,625,91,580,85" shape="poly">
+      <area id="Mine" alt="Mine" title="Mine" coords="456,73,405,115,433,134,458,128,491,112" shape="poly">
+      <area id="Beach" alt="The Beach" title="The Beach" coords="136,211,37,234,41,200,52,179,44,138,64,123,88,142,97,165,120,170" shape="poly">
+      <area id="Dock" alt="The Dock" title="The Dock" coords="26,318,59,335,60,346,116,358,143,314,163,308,161,287,105,270,57,278" shape="poly">
+      <area id="Town" alt="Town" title="Town" coords="172,285,166,248,195,218,235,218,324,229,343,289,239,294" shape="poly">
+      <area id="Plaza" alt="The Plaza" title="The Plaza" coords="433,249,443,218,501,210,586,233,582,295,441,291" shape="poly">
+      <area id="Snow Fort" alt="Snow Fort" title="Snow Fort" coords="353,278,392,295,427,280,407,251,395,221,368,234,353,255" shape="poly">
+      <area id="Cove" alt="Cove" title="Cove" coords="522,108,561,104,596,124,586,146,552,156,526,142,511,130" shape="poly">
+      <area id="Stadium" alt="Stadium" title="Stadium" coords="443,186,418,211,324,213,302,188,308,150,341,141,410,140" shape="poly">
+      <area id="Forest" alt="Forest" title="Forest" coords="466,182,491,196,585,215,586,181,529,159,492,160" shape="poly">
+      <area id="Igloo" alt="Igloo" title="Igloo" coords="446,343,465,350,489,337,486,317,464,312,447,321" shape="poly">
+    </map>
+    <div id="folded">
+      <img id="icon" class="noDrag" src="images/map_icon.jpg" alt="Map Icon" width="125" height="150">
+    </div>
+    <script src="map.js"></script>
+</body>
+</html>
