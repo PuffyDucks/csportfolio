@@ -119,14 +119,16 @@ button.function:hover {
 
 div#calculator {
   border-style: solid;
+  border-color: #333;
   display: inline-block;
   margin-left: 60px;
-  background: #000;
+  background: #333;
 }
 
 div#textbox {
   border-style: solid;
-  margin: 3px;
+  border-color: #333;
+  margin: 2px;
   background: #ffffff;
 }
 
