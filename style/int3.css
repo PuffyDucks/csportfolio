@@ -79,3 +79,61 @@ input.slider {
 #b::-webkit-slider-thumb {
   background: #0000DD;
 }
+
+button.calculatorButton {
+  margin: 1px;
+  margin-bottom: 4px;
+  background: #EAB6EA;
+  border: none;
+  font-family: "Roboto";
+  font-size: 28px;
+  cursor: pointer;
+  width: 100px;
+  height: 80px;
+  padding: 12px 24px;
+}
+
+button.calculatorButton:hover {
+  background: #D6ABD6;
+}
+
+button.left {
+  margin-left: 4px;
+}
+
+button.operation {
+  background: #B2A3FF;
+}
+
+button.operation:hover {
+  background: #A394EF;
+}
+
+button.function {
+  background: #ED9ED0;
+}
+
+button.function:hover {
+  background: #DB8EBF;
+}
+
+div#calculator {
+  border-style: solid;
+  display: inline-block;
+  margin-left: 60px;
+  background: #000;
+}
+
+div#textbox {
+  border-style: solid;
+  margin: 3px;
+  background: #ffffff;
+}
+
+p#output {
+  margin-left: 5px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-size: 31px;
+  font-family: "Roboto";
+}
