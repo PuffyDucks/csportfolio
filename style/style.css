@@ -46,27 +46,6 @@ li.selected {
   box-sizing: border-box;
 }
 
-div.column1 {
-  float: left;
-  width: 60%;
-  padding: 0px;
-  line-height: 1.8;
-  word-wrap: break-word;
-}
-
-div.column2 {
-  float: left;
-  width: 40%;
-  padding: 0px;
-  line-height: 1.8;
-  word-wrap: break-word;
-}
-
-div.heading {
-  clear: both;
-  margin-bottom: 30px;
-}
-
 @font-face {
   font-family: "Roboto";
   src: url(Roboto/Roboto-Regular.ttf) format("truetype");
@@ -88,12 +67,6 @@ h1.title {
   font-family: "Roboto";
 }
 
-h2.output {
-  margin: 0px;
-  font-size: 28px;
-  font-family: "Roboto";
-}
-
 h2.title {
   margin: 60px;
   margin-top: 30px;
@@ -111,10 +84,9 @@ h2.sub {
   font-family: "Roboto";
 }
 
-p.output {
-  margin: 0px;
-  font-size: 18px;
-  font-family: "RobotoL";
+div.heading {
+  clear: both;
+  margin-bottom: 30px;
 }
 
 p.desc {
@@ -133,7 +105,7 @@ b.code {
   font-size: 15px;
 }
 
-p#cap {
+p.caption {
   margin: 0px;
   font-size: 15px;
   font-family: "RobotoL";
@@ -155,32 +127,10 @@ ul.sub {
   line-height: 1.8;
 }
 
-ul.output {
-  margin: 0px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 18px;
-  font-family: "RobotoL";
-  line-height: 1.8;
-}
-
 p.code {
   margin-left: 60px;
   margin-right: 60px;
   font-family: monospace;
-  font-size: 15px;
-  background-color: #EDE2ED;
-  border: 0px;
-  display: block;
-  padding: 20px;
-  line-height: 1.8;
-}
-
-div.output {
-  margin-left: 60px;
-  margin-right: 60px;
-  margin-top: 20px;
-  margin-bottom: 20px;
   font-size: 15px;
   background-color: #EDE2ED;
   border: 0px;
@@ -198,41 +148,6 @@ img.desc {
   margin: 60px;
 }
 
-img.ex {
-  margin: 10px;
-  padding: 0px;
-  width: 34%;
-}
-
-img.output {
-  margin: 0px;
-  padding: 0px;
-  width: 150px;
-}
-
-table.week {
-  border: 1px solid black;
-  border-collapse: collapse;
-  margin-left: auto;
-  margin-right: auto;
-  width: 92%;
-  font-family: "RobotoL";
-
-}
-
-th.week, td.week {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-
-th.week, td.week {
-  padding: 10px;
-}
-
-td.week {
-  width: 13vw;
-}
-
 td.code {
   border: 1px solid black;
   border-collapse: collapse;
@@ -242,115 +157,9 @@ td.code {
   line-height: 1.8;
 }
 
-table.week tr:nth-child(even) {
-  background-color: #FFF0FF;
-}
-table.week tr:nth-child(odd) {
-   background-color: #F0E4F0;
-}
-table.week th {
-  background-color: #926292;
-  color: white;
-}
-
-table.output {
-  border: 1px solid black;
-  border-collapse: collapse;
-  font-size: 18px;
-  font-family: "RobotoL";
-}
-
-th.output, td.output {
-  border: 1px solid black;
-  background-color: #F0E4F0;
-  border-collapse: collapse;
-  padding: 10px;
-}
-
 hr.separate {
   margin: 60px;
   border: #786778 solid 1px;
-}
-
-canvas.example-canvas {
-  margin: 60px;
-}
-
-#newColorDropdown, #newColorInput, #inputType {
-  margin: 60px;
-  margin-top: 0px;
-  margin-bottom: 20px;
-  margin-right: 0px;
-}
-
-button#changeColorButton {
-  margin: 60px;
-  margin-top: 0px;
-  margin-bottom: 10px;
-  background: #C7D0F9;
-  border: none;
-  font-family: "Roboto";
-  font-size: 13px;
-  cursor: pointer;
-  padding: 10px 20px;
-  border-radius: 8px;
-}
-
-button#changeColorButton:hover {
-  background: #B6BFEA;
-}
-
-button.changeInputButton {
-  margin-left: 20px;
-  margin-bottom: 60px;
-  background: #EAB6EA;
-  border: none;
-  font-family: "Roboto";
-  font-size: 18px;
-  cursor: pointer;
-  padding: 12px 24px;
-}
-
-button.changeInputButton:hover {
-  background: #D6ABD6;
-}
-
-button#inputButton {
-  margin-left: 60px;
-}
-
-input.slider {
-  -webkit-appearance: none;
-  height: 5px;
-  background: #000000;
-  outline: none;
-  /* opacity: 0.7; */
-  -webkit-transition: .2s;
-  transition: opacity .2s;
-  margin-left: 60px;
-  margin-bottom: 20px;
-}
-
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-#r::-webkit-slider-thumb {
-  background: #DD0000;
-  /* border: 2px solid #DD0000; /* Green */ */
-}
-
-#g::-webkit-slider-thumb {
-  background: #00DD00;
-}
-
-#b::-webkit-slider-thumb {
-  background: #0000DD;
 }
 
 img.noDrag {
@@ -360,4 +169,20 @@ img.noDrag {
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+}
+
+div.column1 {
+  float: left;
+  width: 60%;
+  padding: 0px;
+  line-height: 1.8;
+  word-wrap: break-word;
+}
+
+div.column2 {
+  float: left;
+  width: 40%;
+  padding: 0px;
+  line-height: 1.8;
+  word-wrap: break-word;
 }

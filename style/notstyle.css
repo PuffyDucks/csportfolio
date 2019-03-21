@@ -1,6 +1,6 @@
-body {
+body{
   background-color: #F7F2F7;
-  margin: 0;
+  margin: 0px;
 }
 
 ul.menu {
@@ -11,14 +11,14 @@ ul.menu {
   background-color: #D390C2;
 }
 
-li.menu a, li.home a, li.selected a{
+li.menu a, li.home a, li.selected a, li.art-button, li.javascript-website-button, li.ai-button{
   float: left;
   display: inline-block;
   text-align: center;
-  padding: 1vh 3vw;
+  padding: 1vh 2.5vw;
   text-decoration: none;
-  font-size: 22px;
-  font-family: "Roboto", Verdana, Tahoma;
+  font-size: 20px;
+  font-family: "Roboto";
   color:  #FFFFFF;
 }
 
@@ -43,7 +43,7 @@ li.selected {
 }
 
 p.marquee {
-  /*color: #00FFFF;*/
+  color: #00FFFF;
 }
 
 @font-face {
@@ -78,51 +78,8 @@ p#big {
   font-size: 40px;
 }
 
-li.image {
-  margin: 20px;
-  display: inline-block;
-  color: black;
-  text-align: center;
-  padding: 1vh 0vw;
-  text-decoration: none;
-  font-size: 25px;
-  font-family: "RobotoL", Verdana, Tahoma;
-}
-img {
-  margin: 10px;
-  padding: 1vh 1vw;
-}
-
 div {
   background-image: url(http://farm3.static.flickr.com/2464/3697567010_6ec9371123_o.gif);
-}
-
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-th, td {
-  padding: 10px;
-}
-
-td {
-  width: 13vw;
-}
-table#week {
-  margin-left: auto;
-  margin-right: auto;
-  width: 92%;
-}
-
-table#week tr:nth-child(even) {
-    background-color: #FFF0FF;
-}
-table#week tr:nth-child(odd) {
-   background-color: #F0E4F0;
-}
-table#week th {
-    background-color: #926292;
-    color: white;
 }
 
 span.marquee  {

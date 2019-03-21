@@ -1,0 +1,53 @@
+p.output {
+  margin: 0px;
+  font-size: 18px;
+  font-family: "RobotoL";
+}
+
+h2.output {
+  margin: 0px;
+  font-size: 28px;
+  font-family: "Roboto";
+}
+
+ul.output {
+  margin: 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-family: "RobotoL";
+  line-height: 1.8;
+}
+
+div.output {
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  background-color: #EDE2ED;
+  border: 0px;
+  display: block;
+  padding: 20px;
+  line-height: 1.8;
+}
+
+table.output {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 18px;
+  font-family: "RobotoL";
+}
+
+th.output, td.output {
+  border: 1px solid black;
+  background-color: #F0E4F0;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+img.output {
+  margin: 0px;
+  padding: 0px;
+  width: 150px;
+}
