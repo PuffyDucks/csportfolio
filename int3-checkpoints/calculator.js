@@ -156,19 +156,22 @@ function pressedClear(){
   updateValue();
 }
 function pressedEqual(){
-  if (operation == "add") {
-    value = previousValue + value;
-  } else if (operation == "subtract") {
-    value = previousValue - value;
-  } else if (operation == "multiply") {
-    value = previousValue * value;
-  } else if (operation == "divide") {
-    value = previousValue / value;
+  if (value != "") {
+    if (operation == "add") {
+      value = previousValue + value;
+    } else if (operation == "subtract") {
+      value = previousValue - value;
+    } else if (operation == "multiply") {
+      value = previousValue * value;
+    } else if (operation == "divide") {
+      value = previousValue / value;
+    }
+    updateValue();
+    previousValue = value;
+    value = "";
+    operation = "";
+    outputNumber = true;
   }
-  updateValue();
-  previousValue = value;
-  value = "";
-  outputNumber = true;
 }
 
 function updateValue(){
