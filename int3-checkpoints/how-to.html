@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML/CSS How To</title>
+  <link rel="stylesheet" href="../style/style.css" type="text/css">
+  <link rel="stylesheet" href="../style/int1.css" type="text/css">
+  <link rel="stylesheet" href="../style/output.css" type="text/css">
+</head>
+<body>
+  <ul class="menu">
+    <li class="home"><a style="" href="../index.html">PuffyDucks </a></li>
+    <li class="menu"><a href="color.html">Color </a></li>
+    <li class="menu"><a href="map.html">Map </a></li>
+    <li class="menu"><a href="button.html">Button </a></li>
+    <li class="menu"><a href="calculator.html">Calculator </a></li>
+    <li class="menu"><a href="snowflakes.html">Snowflakes </a></li>
+    <li class="selected"><a href="how-to.html">How To </a></li>
+  </ul>
+    <h1 class="title">Interactive Page How To</h1>
+    <p class="desc">The Snowflakes page runs javascript in HTML to recieve and use input from the user. </p><br>
+    <div class="heading">
+      <h2 class="title">Snowflakes - Functions, eventListeners, and Style Changes</h2>
+    </div>
+    <p class="desc">On the webpage, snowflakes fall from the top. Clicking on the snowflakes makes them bigger, and moving the mouse over the snowflakes makes them spin. </p><br>
+    <div class="output" style="padding: 0px">
+      <iframe class="output" src="examples/snowflakes-example1.html" style="height: 400px; border: none;"></iframe>
+    </div>
+    <hr class="separate">
+    <h2 class="sub">Enlarging</h2><br>
+    <p class="desc">In the HTML, all of the snowflakes are created with <b class="code">class="snowflake"</b>. This allows the JavaScript to find all of the elements as an array using</p>
+    <p class="code">var snowflakes = document.getElementsByClassName("snowflake");</p>
+    <p class="desc">Then, interaction with the snowflakes is once again detected using <b class="code">addEventListener</b>. This time, movement of the mouse changes the snowflake, so <b class=code>mousemove</b> is used.</p>
+    <p class="code">snowflakes[i].addEventListener("mousedown", enlargeSnowflake);</p>
+    <p class="desc">This runs the function <b class="code">enlargeSnowflake</b>. In it, the <b class="code">style</b> property <b class="code">fontSize</b> for the snowflake changes.</p>
+    <p class="code">function enlargeSnowflake(evt) {<br>&nbsp;&nbsp;evt.target.style.fontSize = "60px";<br>}</p>
+    <p class="desc">The code makes snowflakes that enlarge on click.</p>
+    <div class="output" style="padding: 0px">
+      <iframe class="output" src="examples/snowflakes-example2.html" style="height: 100px; border: none;"></iframe>
+    </div>
+    <hr class="separate">
+    <h2 class="sub">Spinning</h2><br>
+    <p class="desc">As mentioned before, the snowflakes are created with <b class="code">class="snowflake"</b>. This allows the JavaScript to find all of the elements as an array using</p>
+    <p class="code">var snowflakes = document.getElementsByClassName("snowflake");</p>
+    <p class="desc">Then, interaction with the snowflakes can be detected using <b class="code">addEventListener</b>. For clicks, <b class=code>mousedown</b> is used(<b class=code>click</b> is not used to make it more sensitive).</p>
+    <p class="code">snowflakes[i].addEventListener("mousemove", rotateSnowflake);</p>
+    <p class="desc">This runs the function <b class="code">rotateSnowflake</b>. In it, the <b class="code">style</b> property <b class="code">transform</b> for the snowflake changes.</p><br>
+    <p class="desc">The variable <b class="code">degrees</b> takes on the current rotation value of the snowflake. It is in the format of <b class="code">rotate(__deg)</b>, so <b class="code">degrees.replace</b> and <b class="code">parseInt</b> is used to extract a numerical value. 3 is added to this number to rotate the snowflake more, and <b class="code">evt.target.style.transform</b> is set to the new rotation value.</p>
+    <p class="code">function rotateSnowflake(evt) {<br>&nbsp;&nbsp;var degrees = evt.target.style.transform;<br>&nbsp;&nbsp;degrees = degrees.replace("rotate(", "");<br>&nbsp;&nbsp;degrees = degrees.replace("deg)", "");<br>&nbsp;&nbsp;degrees = parseInt(degrees, 10);<br>&nbsp;&nbsp;degrees += 3;<br>&nbsp;&nbsp;console.log(degrees);<br>&nbsp;&nbsp;evt.target.style.transform = "rotate(" + degrees + "deg)";<br>}
+</p>
+    <p class="desc">The code makes snowflakes that rotate when the mouse is moved over them.</p>
+    <div class="output" style="padding: 0px">
+      <iframe class="output" src="examples/snowflakes-example3.html" style="height: 100px; border: none;"></iframe>
+    </div>
+    <hr class="separate">
+</body>
+</html>
