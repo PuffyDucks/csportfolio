@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="processing.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript How To</title>
+    <link rel="stylesheet" href="../style/style.css" type="text/css">
+    <link rel="stylesheet" href="../style/int2.css" type="text/css">
+    <link rel="stylesheet" href="../style/output.css" type="text/css">
+</head>
+<body>
+  <ul class="menu">
+    <li class="home"><a href="https://puffyducks.github.io/">PuffyDucks </a></li>
+      <li class="menu"><a href="art.html">Art </a></li>
+      <li class="selected"><a href="how-to.html">How To </a></li>
+  </ul>
+    <h1 class="title">Javascript How To</h1>
+    <p class="desc">The interactable programs filled with shapes and colors utilize javascript and processing.js to run.</p><br>
+    <div class="heading">
+      <h2 class="title">Art Page - Circles, Conditionals, Loops, Functions, and Some Math</h2>
+    </div>
+    <p class="desc">In the art program, there is a little circle that is slowly changing colors. When the mouse goes near it, the ball runs away, revealing a little tail behind it. </p><br>
+    <canvas class="example-canvas" id="output-canvas"></canvas>
+    <script src="artExample.js"></script>
+    <hr class="separate">
+    <h2 class="sub">Tracking Distance and Angle</h2><br>
+    <p class="desc">To tell how close the mouse is to the circle, the program uses triginometry to determine the distance between the two, and then finds the angle to calculate the angle the circle should move at. First, the variables <b class="code">mouseDistanceX</b> and <b class="code">mouseDistanceY</b> are determined by subtracting <b class="code">mouseX - circleX</b> and <b class="code">mouseY - circleY</b>. Then, the distance is found using the pythagorean theorem and square rooting the square of <b class="code">mouseDistanceX</b> added to the square of <b class="code">mouseDistanceY</b>.</p></br>
+    <p class="desc">The angle is then found using the slope of the distance. This is done by dividing rise over run, or <b class="code">mouseDistanceY / mouseDistanceX</b>. Then, that slope is turned into an angle using the arctangent of this slope with <b class="code">atan(slope)</b>.</p></br>
+    <p class="desc">Finally, by adding <b class="code">180&#176;</b> to the angle and finding the sine and cosine, the direction the ball runs away at is determined. For x, the direction calculation is <b class="code">cos((angle + 180) * PI / 180)</b>. The speed the ball moves at is determined using an inverse exponent. The x movement is calculated with <b class="code">300 / (mouseDistance + 1)</b></p>
+    <canvas class="example-canvas" id="output-canvas2"></canvas>
+    <script src="artDebug.js"></script>
+    <hr class="separate">
+    <h2 class="sub">Future improvements</h2><br>
+    <p class="desc">The next improvement I would want to add would be better pathfinding, especially around the borders of the program. Currently, the program uses if statements to detect if the ball is too close to the edge of the program. The program would be more interesting with more advanced pathfinding where the ball could dodge the mouse and spin around it.</p>
+    <hr class="separate">
+</body>
+</html>
